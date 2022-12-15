@@ -65,6 +65,12 @@ extern global_t vg;
 
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
+void _pint(stack_t **doubly, unsigned int cline);
+void _pop(stack_t **doubly, unsigned int cline);
+void _swap(stack_t **doubly, unsigned int cline);
+void _queue(stack_t **doubly, unsigned int cline);
+void _stack(stack_t **doubly, unsigned int cline);
+void _add(stack_t **doubly, unsigned int cline);
 
 
 void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);

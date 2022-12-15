@@ -9,6 +9,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	int i;
+
 	for (i = 0; s1[i] == s2[i] && s1[i]; i++)
 		;
 	if (s1[i] > s2[i])
@@ -50,6 +51,7 @@ char *_strtoky(char *s, char *d)
 {
 	static char *ultimo;
 	int i = 0, j = 0;
+
 	if (!s)
 		s = ultimo;
 	while (s[i] != '\0')

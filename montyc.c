@@ -5,7 +5,7 @@ global_t vg;
 /**
  * free_vg - frees the global variables.
  */
-void free_vg()
+void free_vg(void)
 {
 	free_dlistint(vg.head);
 	free(vg.buffer);
@@ -13,7 +13,7 @@ void free_vg()
 }
 
 /**
- * _start_vg - initalizes the global variables.
+ * start_vg - initalizes the global variables.
  * @fd: file descriptor.
  */
 void start_vg(FILE *fd)
@@ -36,6 +36,7 @@ void start_vg(FILE *fd)
 FILE *check_input(int argc, char *argv[])
 {
 	FILE *fd;
+
 	if (argc == 1 || argc > 2)
 	{
 		dprintf(2, "USAGE: monty file\n");

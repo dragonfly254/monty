@@ -46,9 +46,12 @@ stack_t *add_dnodeint_end(stack_t **head, const int n)
 stack_t *add_dnodeint(stack_t **head, const int n)
 {
 	stack_t *temp;
+
 	if (head == NULL)
 		return (NULL);
+
 	temp = malloc(sizeof(stack_t));
+
 	if (!temp)
 	{
 		dprintf(2, "Error: malloc failed\n");
@@ -79,6 +82,7 @@ stack_t *add_dnodeint(stack_t **head, const int n)
 void free_dlistint(stack_t *head)
 {
 	stack_t *tmp;
+
 	while ((tmp = head) != NULL)
 	{
 		head = head->next;
