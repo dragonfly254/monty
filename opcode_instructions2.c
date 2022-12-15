@@ -25,7 +25,7 @@ void _stack(stack_t **doubly, unsigned int cline)
 	(void)doubly;
 	(void)cline;
 
-	vglo.lifo = 1;
+	vg.lifo = 1;
 }
 
 

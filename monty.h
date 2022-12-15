@@ -71,7 +71,8 @@ void _swap(stack_t **doubly, unsigned int cline);
 void _queue(stack_t **doubly, unsigned int cline);
 void _stack(stack_t **doubly, unsigned int cline);
 void _add(stack_t **doubly, unsigned int cline);
-
+void _nop(stack_t **doubly, unsigned int cline);
+void _sub(stack_t **doubly, unsigned int cline);
 
 void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 int _sch(char *s, char c);
